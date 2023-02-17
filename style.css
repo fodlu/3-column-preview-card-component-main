@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container .hero {
+  padding: 30px;
+}
+
+.container .sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.container .sedans a {
+  color: hsl(31, 77%, 52%);
+}
+
+.container .SUVS {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.container .SUVS a {
+  color: hsl(184, 100%, 22%);
+}
+
+.container .Luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.container .Luxury a {
+  color: hsl(179, 100%, 13%);
+}
+
+.container .hero div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.container .hero div img {
+  width: 30px;
+  height: 30px;
+}
+
+.container .hero h1 {
+  color: hsl(0, 0%, 95%);
+  padding: 25px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.container .hero p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 10px;
+  width: 110px;
+  padding-bottom: 50px;
+  line-height: 15px;
+}
+
+.container .hero a {
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.container .hero a:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 80%;
+  }
+
+  .container .hero h1 {
+    padding: 25px 0;
+    font-size: 25px;
+  }
+
+  .container .hero p {
+    font-size: 14px;
+    width: 100%;
+    padding-bottom: 30px;
+    line-height: 20px;
+  }
+
+  .container .hero a {
+    padding: 10px 25px;
+  }
+}
